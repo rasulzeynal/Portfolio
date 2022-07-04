@@ -4,7 +4,6 @@ import {loadFull} from "tsparticles";
 
 const Particle = () => {
     const particlesInit = async (main) => {
-        console.log(main);
     
         // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
         // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
@@ -12,168 +11,118 @@ const Particle = () => {
         await loadFull(main);
       };
     
-      const particlesLoaded = (container) => {
-        console.log(container);
-      };
+    
     
   return (
     <Particles
     id="tsparticles"
     init={particlesInit}
-    loaded={particlesLoaded}
+    style={{position:"relative"}}
     options={{
         "fullScreen": {
             "enable": true,
             "zIndex": 1
         },
-        "detectRetina": false,
-        "fpsLimit": 120,
-        "interactivity": {
-            "events": {
-                "onClick": {
-                    "enable": false,
-                    "mode": "push"
-                },
-                "onDiv": {
-                    "elementId": "repulse-div",
-                    "enable": false,
-                    "mode": "repulse"
-                },
-                "onHover": {
-                    "enable": true,
-                    "mode": "bubble",
-                    "parallax": {
-                        "enable": false,
-                        "force": 2,
-                        "smooth": 10
-                    }
-                },
-                "resize": true
-            },
-            "modes": {
-                "bubble": {
-                    "distance": 40,
-                    "duration": 2,
-                    "opacity": 8,
-                    "size": 6,
-                    "speed": 3
-                },
-                "connect": {
-                    "distance": 80,
-                    "lineLinked": {
-                        "opacity": 0.5
-                    },
-                    "radius": 60
-                },
-                "grab": {
-                    "distance": 400,
-                    "lineLinked": {
-                        "opacity": 1
-                    }
-                },
-                "push": {
-                    "quantity": 4
-                },
-                "remove": {
-                    "quantity": 2
-                },
-                "repulse": {
-                    "distance": 200,
-                    "duration": 0.4
-                },
-                "slow": {
-                    "active": false,
-                    "radius": 0,
-                    "factor": 1
-                }
-            }
-        },
         "particles": {
-            "color": {
-                "value": ["#4285f4", "#34A853", "#FBBC05", "#EA4335"]
-            },
-            "lineLinked": {
-                "blink": false,
-                "color": "random",
-                "consent": false,
-                "distance": 40,
-                "enable": true,
-                "opacity": 1,
-                "width": 1
-            },
-            "move": {
-                "attract": {
-                    "enable": false,
-                    "rotate": {
-                        "x": 600,
-                        "y": 1200
-                    }
-                },
-                "bounce": false,
-                "direction": "none",
-                "enable": true,
-                "outMode": "bounce",
-                "random": false,
-                "speed": 1,
-                "straight": false
-            },
             "number": {
+                "value": 160,
                 "density": {
-                    "enable": false,
-                    "area": 2000
-                },
-                "limit": 0,
-                "value": 200
-            },
-            "opacity": {
-                "animation": {
                     "enable": true,
-                    "minimumValue": 0.05,
-                    "speed": 2,
-                    "sync": false
-                },
-                "random": false,
-                "value": 0.4
+                    "value_area": 800
+                }
+            },
+            "color": {
+                "value": "#ffffff"
             },
             "shape": {
                 "type": "circle"
             },
-            "size": {
-                "animation": {
-                    "enable": false,
-                    "minimumValue": 0.1,
-                    "speed": 40,
-                    "sync": false
-                },
+            "opacity": {
+                "value": 1,
                 "random": true,
-                "value": 1
+                "anim": {
+                    "enable": true,
+                    "speed": 1,
+                    "opacity_min": 0,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 3,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 4,
+                    "size_min": 0.3,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": false,
+                "distance": 150,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 1,
+                "direction": "none",
+                "random": true,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 600
+                }
             }
         },
-        "polygon": {
-            "draw": {
-                "enable": false,
-                "lineColor": "rgba(255,255,255,0.2)",
-                "lineWidth": 0.5
+        "interactivity": {
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "bubble"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "repulse"
+                },
+                "resize": true
             },
-            "enable": true,
-            "move": {
-                "radius": 10
-            },
-            "position": {
-                "x": 30,
-                "y": 10
-            },
-            "inlineArrangement": "equidistant",
-            "scale": 1,
-            "type": "inline",
-            "url": "https://particles.js.org/images/google.svg"
+            "modes": {
+                "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                        "opacity": 1
+                    }
+                },
+                "bubble": {
+                    "distance": 250,
+                    "size": 0,
+                    "duration": 2,
+                    "opacity": 0,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 400,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+            }
         },
+        "retina_detect": true,
         "background": {
-            "color": "#000000",
-            "image": "",
+            "color": "#232741",
             "position": "50% 50%",
             "repeat": "no-repeat",
-            "size": "cover"
+            "size": "20%"
         }
     }}
     />
