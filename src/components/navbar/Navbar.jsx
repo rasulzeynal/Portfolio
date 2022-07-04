@@ -1,8 +1,10 @@
 import "./navbar.scss";
 import logo from "../../assets/img/male.png"
+import About from "../about/About";
 
 const Navbar = () => {
   return (
+    <>
         <nav className="container">
             <div className="logo">
                 <a>
@@ -28,6 +30,8 @@ const Navbar = () => {
                 </ul>
             </div>
         </nav>
+        <About/>
+        </>
   )
 }
 
