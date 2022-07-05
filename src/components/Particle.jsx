@@ -1,5 +1,8 @@
 import Particles from "react-tsparticles";
 import {loadFull} from "tsparticles";
+import About from "./about/About";
+import Home from "./home/Home";
+import Navbar from "./navbar/Navbar";
 
 
 const Particle = () => {
@@ -14,10 +17,10 @@ const Particle = () => {
     
     
   return (
+    <div style={{display:"block"}}>
     <Particles
     id="tsparticles"
     init={particlesInit}
-    style={{position:"relative"}}
     options={{
         "fullScreen": {
             "enable": true,
@@ -126,6 +129,9 @@ const Particle = () => {
         }
     }}
     />
+    <Navbar/>
+    <Home/>
+    </div>
   )
 }
 
