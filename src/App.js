@@ -5,6 +5,7 @@ import About from "./components/about/About";
 function App() {
   return (
     <div className="App">
+      <Particle/>
       <About/>
     </div>
   );

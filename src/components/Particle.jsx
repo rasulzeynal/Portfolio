@@ -17,13 +17,13 @@ const Particle = () => {
     
     
   return (
-    <div style={{display:"block"}}>
     <Particles
+    style={{height:"1000px"}}
     id="tsparticles"
     init={particlesInit}
     options={{
         "fullScreen": {
-            "enable": true,
+            "enable": false,
             "zIndex": 1
         },
         "particles": {
@@ -129,9 +129,6 @@ const Particle = () => {
         }
     }}
     />
-    <Navbar/>
-    <Home/>
-    </div>
   )
 }
 
