@@ -3,7 +3,6 @@ import logo from "../../assets/img/male.png"
 
 const Navbar = () => {
   return (
-    <>
         <nav className="container">
             <div className="logo">
                 <a>
@@ -29,7 +28,6 @@ const Navbar = () => {
                 </ul>
             </div>
         </nav>
-        </>
   )
 }
 

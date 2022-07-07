@@ -19,6 +19,10 @@ const Home = () => {
         {text}  
       </span> 
       </h3>
+      <div style={{textAlign:"center"}}>
+      <button className="btn btn-cv">Download CV</button>
+      <button className="btn btn-contact">Contact</button>
+    </div>
     </div>
   )
 }
