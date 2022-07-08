@@ -1,7 +1,8 @@
 .about {
-    background-color: #232741;
+    background-color: rgb(17, 57, 83);
     height: 100vh;
     color: white;
+    display: flex;
 
     .header{
         margin-left: 50px;
@@ -23,7 +24,7 @@
         font-size: 20px;
         font-weight: 400;
         color: lightgrey;
-        width: 40vw;
+        width: 400px;
         line-height: 29px;
     }
 
@@ -38,6 +39,25 @@
             align-items: center;
             display: flex;
             color: black;
+
+            .icon {
+                color: black;
+                font-size: 32px;
+                margin-left: 15px;
+            }
+
+            .education-right {
+                margin-left: 20px;
+
+                .uni-year {
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                }
+
+                .uni {
+                    margin-bottom: 5px;
+                }
+            }
         }
     }
 }
