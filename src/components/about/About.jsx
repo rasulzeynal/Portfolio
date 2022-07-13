@@ -2,7 +2,9 @@ import "./about.scss";
 import { educationData } from "../../data/educationData";
 import {faGraduationCap} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import img from "../../assets/img/ab-img.png"
+import img from "../../assets/img/about.png";
+import { skillsData } from "../../data/skillsData";
+import { skillsImage } from "../../utils/skillimages";
 
 const About = () => {
   return (
@@ -11,7 +13,15 @@ const About = () => {
       <div className="first">
         <h1 className="header">Who I am</h1>
         <p className="description">My name is Rasul. I'm web developer based in Baku, Azerbaijan.</p>
-        <p className="desc2">During the day I work as a lead developer at a local agency and in the evening I work on freelance projects and utilize the time to built my own products. I spent my leisure hours writing articles and poetry. Right now I'm also trying a hand at machine learning and AI. I love to learn and explore new arenas.</p>
+        <p className="desc2">I am a Front End Developer and pursuing my interest in Computer Science and take it to the level where I can make some significant contribution in the field of computer science that helps the masses.Also I am good at.</p>
+      </div>
+      <div className="skills" style={{display:"flex",width:"100%",justifyContent:"space-between",color:"black"}}>
+        {skillsData.map((skill,id) => (
+          <div className="skill-card" key={id} style={{width:"100px",height:"100px",border:"1px solid gray",borderRadius:"10px",boxShadow:"0px 10px 20px gray"}}>
+            <img src={skillsImage(skill)} alt={skill} style={{width:"50px",height:"50px",borderRadius:"10px"}} />
+            <h3>{skill}</h3>
+          </div>
+        ))}
       </div>
       <div className="education">
         {educationData.map(edu => (
@@ -28,7 +38,7 @@ const About = () => {
       </div>
       </div>
 
-      <div className="right" style={{width:"50%",display:"flex",alignItems:"center",justifyContent:"center"}} ><img src={img} style={{width:"500px"}}/></div>
+      <div className="right" style={{width:"40vw",display:"flex",alignItems:"center",justifyContent:"start"}} ><img src={img} style={{width:"700px"}}/></div>
     </div>
   )
 }
