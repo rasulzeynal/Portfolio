@@ -2,7 +2,6 @@ import "./about.scss";
 import { educationData } from "../../data/educationData";
 import {faGraduationCap} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import img from "../../assets/img/about.png";
 import { skillsData } from "../../data/skillsData";
 import { skillsImage } from "../../utils/skillimages";
 
@@ -15,10 +14,10 @@ const About = () => {
         <p className="description">My name is Rasul. I'm web developer based in Baku, Azerbaijan.</p>
         <p className="desc2">I am a Front End Developer and pursuing my interest in Computer Science and take it to the level where I can make some significant contribution in the field of computer science that helps the masses.Also I am good at.</p>
       </div>
-      <div className="skills" style={{display:"flex",width:"100%",justifyContent:"space-between",color:"black"}}>
+      <div className="skills" style={{display:"flex",width:"100%",justifyContent:"space-around",color:"black"}}>
         {skillsData.map((skill,id) => (
-          <div className="skill-card" key={id} style={{width:"100px",height:"100px",border:"1px solid gray",borderRadius:"10px",boxShadow:"0px 10px 20px gray"}}>
-            <img src={skillsImage(skill)} alt={skill} style={{width:"50px",height:"50px",borderRadius:"10px"}} />
+          <div className="skill-card" key={id} style={{width:"120px",height:"120px",borderRadius:"10px",boxShadow:"0px 5px 10px gray",display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
+            <img src={skillsImage(skill)} alt={skill} style={{width:"50px",height:"50px",borderRadius:"10px",marginBottom:"15px"}} />
             <h3>{skill}</h3>
           </div>
         ))}
@@ -38,7 +37,7 @@ const About = () => {
       </div>
       </div>
 
-      <div className="right" style={{width:"40vw",display:"flex",alignItems:"center",justifyContent:"start"}} ><img src={img} style={{width:"700px"}}/></div>
+      <div className="right" style={{width:"40vw",display:"flex",alignItems:"center",justifyContent:"start"}} ></div>
     </div>
   )
 }
