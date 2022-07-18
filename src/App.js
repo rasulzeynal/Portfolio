@@ -2,13 +2,14 @@ import './App.css';
 import './style.scss'
 import NavBar from './pages/NavBar';
 import Home from "./pages/home/Home";
-import About from "./pages/about/About"
+import About from "./pages/about/About";
+import Projects from './pages/projects/Projects';
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
-      <About/>
+      <Projects/>
     </div>
   );
 }
