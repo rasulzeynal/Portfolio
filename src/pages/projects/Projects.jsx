@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import { projectData } from "../../data/pojectData";
 
 function Projects() {
   return (
@@ -15,9 +16,10 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+        {projectData.map(project => (
+            <Col md={4} className="project-card" key={project.id}>
             <ProjectCard
-              imgPath={}
+              imgPath={project.name}
               isBlog={false}
               title="Chatify"
               description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
@@ -25,8 +27,10 @@ function Projects() {
               demoLink="https://chatify-49.web.app/"
             />
           </Col>
+          ))}
+          
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={}
               isBlog={false}
@@ -80,7 +84,7 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
