@@ -89,7 +89,11 @@
     position: relative !important;
     padding-top: 150px !important;
     padding-bottom: 30px !important;
-    background-image: var(--section-background-color) !important;
+    background-image: linear-gradient(
+        to bottom left,
+        rgba(17, 16, 16, 0.582),
+        rgba(12, 8, 24, 0.904)
+      ) !important;
     color: white !important;
     background-Color:#0c051a
   }
