@@ -1,11 +1,12 @@
 import React from 'react';
 import Particle2 from '../Particle2';
+import ProjectCard from "./ProjectCard";
 import { Container, Row, Col, Card} from 'reactstrap';
 import {projectData} from "../../data/pojectData";
 
 const Projects = () => {
   return (
-    <Container>
+    <Container fluid className="project-section">
        <Particle2/>
        <Container>
         <h1 className='project-heading'>
@@ -16,14 +17,19 @@ const Projects = () => {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
-            {projectData.map((project) => {
-              <Card>test</Card>
-            })}
+            {projectData.map((project) => (
+              <ProjectCard 
+              imgPath = {project}
+              isBlock = {false}
+              key={project.id}
+              ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://chatify-49.web.app/"
+              />
+            ))}
           </Col>
         </Row>
         </Container> 
     </Container>
-    
   )
 }
 
