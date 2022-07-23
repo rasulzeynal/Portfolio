@@ -1,7 +1,7 @@
 import React from 'react';
 import Particle2 from '../Particle2';
 import ProjectCard from "./ProjectCard";
-import { Container, Row, Col, Card} from 'reactstrap';
+import {Container, Row, Col} from 'reactstrap';
 import {projectData} from "../../data/pojectData";
 
 const Projects = () => {

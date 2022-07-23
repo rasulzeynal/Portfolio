@@ -1,7 +1,6 @@
-import React from 'react';
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
-import {Card, CardBody, CardImg,CardTitle, CardText, Button,  } from "reactstrap"
+import {Card, CardBody, CardImg,CardTitle, CardText, Button} from "reactstrap"
 
 const ProjectCard = (props) => {
     console.log(props.imgPath)
