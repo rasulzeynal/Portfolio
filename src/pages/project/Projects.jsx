@@ -9,14 +9,14 @@ const Projects = () => {
     <Container fluid className="project-section">
        <Particle2/>
        <Container>
-        <h1 className='project-heading'>
+        <h1 className='project-heading' style={{textAlign:"center"}}>
           My Recent <strong className='purple'>Works</strong>
         </h1>
-        <p style={{color: "white"}}>
+        <p style={{color: "white",textAlign:"center"}}>
         Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          <Col md={4} className="project-card" style={{display:"flex",flexWrap:"wrap"}}>
             {projectData.map((project) => (
               <ProjectCard 
               imgPath = {project}

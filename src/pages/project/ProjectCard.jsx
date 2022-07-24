@@ -5,8 +5,8 @@ import {Card, CardBody, CardImg,CardTitle, CardText, Button} from "reactstrap"
 const ProjectCard = (props) => {
     console.log(props.imgPath)
   return (
-    <Card className="project-card-view">
-    <CardImg variant="top" src={props.imgPath.url} alt="card-img"/>
+    <Card className="project-card-view" style={{width:"100%"}}>
+    <CardImg variant="top" src={props.imgPath.url} style={{width:"100%"}} alt="card-img"/>
     <CardBody>
         <CardTitle>{props.imgPath.title}</CardTitle>
         <CardText style={{ textAlign: "justify" }}>
