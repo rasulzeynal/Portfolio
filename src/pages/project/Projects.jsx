@@ -15,7 +15,7 @@ const Projects = () => {
         <p style={{textAlign:"center",color:"white"}}>
         Here are a few projects I've worked on recently.
         </p>
-        <Row style={{paddingBottom: "10px" }} className="rows">
+        <Row style={{paddingBottom: "10px",justifyContent:"space-between" }} className="rows">
             {projectData.map((project) => (
               <ProjectCard 
               imgPath = {project}
