@@ -42,19 +42,19 @@ const NavBar = () => {
           <Collapse isOpen={isOpen} className='collapse' navbar style={{color:"white"}}>
             <Nav className="ml-auto" navbar >
               <NavItem>
-                <NavLink as={Link} to="/" className='nav-link'>
+                <NavLink as={Link} to="/" className='nav-link' style={{cursor:"pointer"}}>
                 <AiOutlineHome className='mr-1 mb-1'/>Home</NavLink>
               </NavItem>
               <NavItem >
-                <NavLink as={Link} to="/about">
-                   <AiOutlineUser className='mr-1 mb-1'/>About</NavLink>
+                <NavLink as={Link} to="/about"  style={{cursor:"pointer"}}>
+                  <AiOutlineUser className='mr-1 mb-1'/>About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink as={Link} to="/projects">
+                <NavLink as={Link} to="/projects" style={{cursor:"pointer"}}>
                     <AiOutlineFundProjectionScreen className='mr-1 mb-1'/>Projects</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink as={Link} to="/resume">
+                <NavLink as={Link} to="/resume" style={{cursor:"pointer"}}>
                 <CgFileDocument className='mr-1 mb-1' />Resume</NavLink>
               </NavItem>
             </Nav>

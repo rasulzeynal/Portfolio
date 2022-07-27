@@ -5,13 +5,30 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Projects from './pages/project/Projects';
 import Resume from './pages/resume/Resume';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate
+} from "react-router-dom"
+import Footer from './pages/Footer';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
       <NavBar/>
-      <Resume/>
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="*" element={<Navigate to="/"/>} />
+      </Routes>
+      <Footer/>
     </div>
+    </Router>
+    
   );
 }
 

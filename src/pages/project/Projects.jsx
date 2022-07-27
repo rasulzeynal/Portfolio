@@ -3,7 +3,6 @@ import Particle2 from '../Particle2';
 import ProjectCard from "./ProjectCard";
 import {Container, Row, Col} from 'reactstrap';
 import {projectData} from "../../data/pojectData";
-import Footer from '../Footer';
 
 const Projects = () => {
   return (
@@ -28,7 +27,6 @@ const Projects = () => {
             ))}
         </Row>
         </Container> 
-        <Footer/>
     </Container>
   )
 }

@@ -2,11 +2,10 @@ import React,{useState,useEffect} from 'react';
 import Particle2 from "../Particle2";
 import { Container, Row, Button } from 'reactstrap';
 import { AiOutlineDownload } from "react-icons/ai";
-import pdf from "../../assets/pdf/Rasul.pdf";
+import pdf from "../../assets/cv/Rasul.pdf";
 import cv from "../../assets/cv/rasul.png"
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import { Document, Page, pdfjs } from "react-pdf";
-import Footer from "../Footer"
+import {  pdfjs } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const Resume = () => {
@@ -47,7 +46,6 @@ const Resume = () => {
             &nbsp;Download CV
           </Button>
         </Row>
-        <Footer/>
       </Container>
     </div>
   )
