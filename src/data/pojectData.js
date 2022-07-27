@@ -13,6 +13,8 @@ export const projectData = [
         name:"FoodStore",
         url:foodstore,
         lang:['HTML','CSS'],
+        github:"https://github.com/rasulzeynal/FoodStore",
+        demo:"https://fastfoodstore.netlify.app/",
         desc:"This is the first project I have written to test my skills after learning HTML and CSS. Only HTML and CSS were used in the project. As I do not know about JS, each card was made individually."
     },
     {
@@ -20,6 +22,8 @@ export const projectData = [
         name:"My Basic Contacts",
         url:basic_contacts,
         lang:['React','CSS',"Bootstrap"],
+        github:"https://github.com/rasulzeynal/BasicContacts",
+        demo:"https://basiccontacts.netlify.app/",
         desc:""
     },
     {
@@ -27,6 +31,8 @@ export const projectData = [
         name:"Manage Employees",
         url:manage_employees,
         lang:['React','CSS','React-bootstrap'],
+        github:"https://github.com/rasulzeynal/Employees",
+        demo:"https://myemployees.netlify.app/",
         desc:"This project was created to keep brief information about employees. UseContext, useState and useEffect Hooks are used here"
     },
     {
@@ -34,6 +40,8 @@ export const projectData = [
         name:"Simple Shopping",
         url:simple_shopping,
         lang:['React','CSS'],
+        github:"",
+        demo:"",
         desc:""
     },
     {
@@ -41,6 +49,8 @@ export const projectData = [
         name:"Bookfolio",
         url:bookfolio,
         lang:['React','CSS','Bootstrap'],
+        github:"https://github.com/rasulzeynal/Books",
+        demo:"https://bookscreative-gnome-facbad.netlify.app/",
         desc:"This is the first project I have developed by studying React. This project consists of class components and uses the Context API."
     },
     {
@@ -48,6 +58,8 @@ export const projectData = [
         name:"Movies App",
         url:mymovies,
         lang:['React','CSS','Bootstrap'],
+        github:"https://github.com/rasulzeynal/Movies",
+        demo:"",
         desc:"This project consists of a catalog of films."
     },
     {
@@ -55,6 +67,8 @@ export const projectData = [
         name:"Course management app",
         url:myschool,
         lang:['React','SCSS','Reactstrap,Node js'],
+        github:"https://github.com/rasulzeynal/mektebim",
+        demo:"",
         desc:""
     }
 

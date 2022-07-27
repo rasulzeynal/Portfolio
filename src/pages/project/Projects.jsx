@@ -13,7 +13,7 @@ const Projects = () => {
         <h1 className='project-heading' style={{textAlign:"center",marginTop:"100px"}}>
           My Recent <strong className='purple'>Works</strong>
         </h1>
-        <p style={{textAlign:"center",color:"white"}}>
+        <p style={{textAlign:"center",color:"white",marginBottom:"50px"}}>
         Here are a few projects I've worked on recently.
         </p>
         <Row style={{paddingBottom: "10px",justifyContent:"space-between" }} className="rows">

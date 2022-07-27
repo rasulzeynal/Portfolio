@@ -13,7 +13,7 @@ const ProjectCard = (props) => {
           {props.imgPath.desc}
         </CardText>
         <div style={{justifyContent:"space-around",display:"flex"}}>
-        <Button variant="primary" href={props.ghLink} target="_blank" style={{marginBottom:"20px",width:"100px"}}>
+        <Button variant="primary" href={props.imgPath.github} target="_blank" style={{marginBottom:"20px",width:"100px"}}>
           <BsGithub /> &nbsp;
           {props.isBlog ? "Blog" : "GitHub"}
         </Button>
@@ -24,7 +24,7 @@ const ProjectCard = (props) => {
         {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"
-            href={props.demoLink}
+            href={props.imgPath.demo}
             target="_blank"
             style={{ marginLeft: "10px",marginBottom:"20px",width:"100px" }}
           >
