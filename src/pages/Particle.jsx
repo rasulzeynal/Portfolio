@@ -12,7 +12,6 @@ const Particle = () => {
   return ( 
     <div style={{height:"100vh"}}>
     <Particles
-    style={{position:"absolute"}}
     id="tsparticles"
     init={particlesInit}
     options={{

@@ -42,20 +42,20 @@ const NavBar = () => {
           <Collapse isOpen={isOpen} className='collapse' navbar style={{color:"white"}}>
             <Nav className="ml-auto" navbar >
               <NavItem>
-                <NavLink as={Link} to="/" className='nav-link' style={{cursor:"pointer"}}>
-                <AiOutlineHome className='mr-1 mb-1'/>Home</NavLink>
+                <Link to="/" className='nav-link' style={{cursor:"pointer",color:"white"}}>
+                <AiOutlineHome className='mr-1 mb-1'/>Home</Link>
               </NavItem>
               <NavItem >
-                <NavLink as={Link} to="/about"  style={{cursor:"pointer"}}>
-                  <AiOutlineUser className='mr-1 mb-1'/>About</NavLink>
+                <Link to="/about" className='nav-link'  style={{cursor:"pointer",color:"white"}}>
+                  <AiOutlineUser className='mr-1 mb-1'/>About</Link>
               </NavItem>
               <NavItem>
-                <NavLink as={Link} to="/projects" style={{cursor:"pointer"}}>
-                    <AiOutlineFundProjectionScreen className='mr-1 mb-1'/>Projects</NavLink>
+                <Link to="/project" className='nav-link' style={{cursor:"pointer",color:"white"}}>
+                    <AiOutlineFundProjectionScreen className='mr-1 mb-1'/>Projects</Link>
               </NavItem>
               <NavItem>
-                <NavLink as={Link} to="/resume" style={{cursor:"pointer"}}>
-                <CgFileDocument className='mr-1 mb-1' />Resume</NavLink>
+                <Link to="/resume" className='nav-link' style={{cursor:"pointer",color:"white"}}>
+                <CgFileDocument className='mr-1 mb-1' />Resume</Link>
               </NavItem>
             </Nav>
           </Collapse>
