@@ -36,30 +36,25 @@ const NavBar = () => {
 
     window.addEventListener("scroll", scrollHandler);
     return (
-      <div>
         <Navbar fixed='top'  className={navColour ? "sticky" : "navbar"}  expand="md">
           <NavbarBrand href="/" className='d-flex'><img src={logo} alt="logo" style={{width:"70px"}} /></NavbarBrand>
-          <NavbarToggler onClick={toggle} aria-controls='responsive-navbar-nav'>
-          <span></span>
-          <span></span>
-          <span></span>
-          </NavbarToggler>
+          <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} className='collapse' navbar id="responsive-navbar-nav" >
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link to="/" className='nav-link' onClick={toggle}>
+                <Link to="/" className='nav-link'>
                 <AiOutlineHome className='mr-1 mb-1'/>Home</Link>
               </NavItem>
               <NavItem >
-                <Link to="/about" className='nav-link'  onClick={toggle}>
+                <Link to="/about" className='nav-link' >
                   <AiOutlineUser className='mr-1 mb-1'/>About</Link>
               </NavItem>
               <NavItem>
-                <Link to="/project" className='nav-link'  onClick={toggle}>
+                <Link to="/project" className='nav-link' >
                     <AiOutlineFundProjectionScreen className='mr-1 mb-1'/>Projects</Link>
               </NavItem>
               <NavItem>
-                <Link to="/resume" className='nav-link'  onClick={toggle}>
+                <Link to="/resume" className='nav-link' >
                 <CgFileDocument className='mr-1 mb-1' />Resume</Link>
               </NavItem>
               <NavItem className="fork-btn nav-item">
@@ -75,7 +70,6 @@ const NavBar = () => {
             </Nav>
           </Collapse>
         </Navbar>
-      </div>
     );
   }
   export default NavBar;
