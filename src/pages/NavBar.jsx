@@ -38,7 +38,11 @@ const NavBar = () => {
     return (
         <Navbar fixed='top'  className={navColour ? "sticky" : "navbar"}  expand="md">
           <NavbarBrand href="/" className='d-flex'><img src={logo} alt="logo" style={{width:"70px"}} /></NavbarBrand>
-          <NavbarToggler onClick={toggle} />
+          <NavbarToggler onClick={toggle} >
+          <span></span>
+          <span></span>
+          <span></span>
+          </NavbarToggler>
           <Collapse isOpen={isOpen} className='collapse' navbar id="responsive-navbar-nav" >
             <Nav className="ml-auto" navbar>
               <NavItem>
