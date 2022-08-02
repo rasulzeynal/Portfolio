@@ -36,7 +36,7 @@ const NavBar = () => {
 
     window.addEventListener("scroll", scrollHandler);
     return (
-        <Navbar fixed='top'  className={navColour ? "sticky" : "navbar"}  expand="md">
+      <Navbar fixed='top'  className={navColour ? "sticky" : "navbar"}  expand="md">
           <NavbarBrand href="/" className='d-flex'><img src={logo} alt="logo" style={{width:"70px"}} /></NavbarBrand>
           <NavbarToggler onClick={toggle} >
           <span></span>
@@ -77,3 +77,82 @@ const NavBar = () => {
     );
   }
   export default NavBar;
+
+
+
+  /* 
+  <Navbar fixed='top'  className={navColour ? "sticky" : "navbar"}  expand="md">
+          <NavbarBrand href="/" className='d-flex'><img src={logo} alt="logo" style={{width:"70px"}} /></NavbarBrand>
+          <NavbarToggler onClick={toggle} >
+          <span></span>
+          <span></span>
+          <span></span>
+          </NavbarToggler>
+          <Collapse isOpen={isOpen} className='collapse' navbar id="responsive-navbar-nav" >
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <Link to="/" className='nav-link'>
+                <AiOutlineHome className='mr-1 mb-1'/>Home</Link>
+              </NavItem>
+              <NavItem >
+                <Link to="/about" className='nav-link' >
+                  <AiOutlineUser className='mr-1 mb-1'/>About</Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/project" className='nav-link' >
+                    <AiOutlineFundProjectionScreen className='mr-1 mb-1'/>Projects</Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/resume" className='nav-link' >
+                <CgFileDocument className='mr-1 mb-1' />Resume</Link>
+              </NavItem>
+              <NavItem className="fork-btn nav-item">
+              <Button
+                href="https://github.com/rasulzeynal/Portfolio"
+                target="_blank"
+                className="fork-btn-inner"
+              >
+                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
+                <AiFillStar style={{ fontSize: "1.1em" }} />
+              </Button>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+  */
+
+
+        /* 
+        <Navbar color="light" light expand="md" fixed='top'>
+      <NavbarBrand href="/">reactstrap</NavbarBrand>
+      <NavbarToggler onClick={toggle} />
+      <Collapse isOpen={isOpen} navbar>
+        <Nav className="ml-auto" navbar>
+          <NavItem>
+            <NavLink href="/components/">Components</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+          </NavItem>
+          <UncontrolledDropdown nav inNavbar>
+            <DropdownToggle nav caret>
+              Options
+            </DropdownToggle>
+            <DropdownMenu right>
+              <DropdownItem>
+                Option 1
+              </DropdownItem>
+              <DropdownItem>
+                Option 2
+              </DropdownItem>
+              <DropdownItem divider />
+              <DropdownItem>
+                Reset
+              </DropdownItem>
+            </DropdownMenu>
+          </UncontrolledDropdown>
+        </Nav>
+      </Collapse>
+    </Navbar> 
+        
+        */
