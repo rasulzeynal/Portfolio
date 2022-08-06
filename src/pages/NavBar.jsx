@@ -39,7 +39,7 @@ const NavBar = () => {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" style={{width:"70px"}} />
+          <img src={logo} className="img-fluid logo" alt="logo"/>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
