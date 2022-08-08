@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row,Col } from 'reactstrap';
+import { Row,Col } from 'react-bootstrap';
 import {
   DiCss3Full,
   DiJavascript1,
@@ -19,7 +19,7 @@ import {BsBootstrap} from "react-icons/bs";
 
 const Techstack = () => {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <Row className='tech-row' >
       <Col xs={4} md={2} className="tech-icons">
         <AiOutlineHtml5 />
       </Col>
