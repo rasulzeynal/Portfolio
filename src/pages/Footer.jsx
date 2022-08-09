@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import {
     AiFillGithub,
     AiOutlineTwitter,
@@ -21,11 +21,10 @@ const Footer = () => {
           <h3>Copyright © {year} SB</h3>
         </Col>
         <Col md="4" className="footer-body">
-          <ul className="footer-icons" style={{listStyle:"none",display:"flex",justifyContent:"center"}}>
+          <ul className="footer-icons">
             <li className="social-icons" >
               <a
                 href="https://github.com/rasulzeynal"
-                style={{ color: "white",marginRight:"15px" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -35,7 +34,6 @@ const Footer = () => {
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/rasulzeynalov/"
-                style={{ color: "white",marginRight:"15px" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >

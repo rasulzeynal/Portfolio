@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import Particle2 from "../Particle2";
-import { Container, Row, Button } from 'reactstrap';
+import { Container, Row, Button } from 'react-bootstrap';
 import { AiOutlineDownload } from "react-icons/ai";
 import pdf from "../../assets/cv/Rasul.pdf";
 import cv from "../../assets/cv/rasul.png"
@@ -19,12 +19,11 @@ const Resume = () => {
     <div>
       <Container fluid className="resume-section">
         <Particle2/>
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row className='download-row' >
           <Button
-            variant="primary"
+            variant="secondary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
@@ -35,12 +34,11 @@ const Resume = () => {
           <img src={cv} alt="cv"/>
         </Row>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row className='download-row' >
           <Button
-            variant="primary"
+            variant="secondary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px",marginBottom:"50px" }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV

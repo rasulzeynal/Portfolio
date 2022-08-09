@@ -1,21 +1,21 @@
 import React from 'react';
 import Particle2 from '../Particle2';
 import ProjectCard from "./ProjectCard";
-import {Container, Row, Col} from 'reactstrap';
+import {Container, Row} from 'react-bootstrap';
 import {projectData} from "../../data/pojectData";
 
 const Projects = () => {
   return (
-    <Container fluid className="project-section" style={{backgroundColor:"#150b27",position:"absolute"}}>
+    <Container fluid className="project-section">
        <Particle2/>
        <Container >
-        <h1 className='project-heading' style={{textAlign:"center",marginTop:"100px"}}>
+        <h1 className='project-heading'>
           My Recent <strong className='purple'>Works</strong>
         </h1>
-        <p style={{textAlign:"center",color:"white",marginBottom:"50px"}}>
+        <p className='project-heading-second'>
         Here are a few projects I've worked on recently.
         </p>
-        <Row style={{paddingBottom: "10px",justifyContent:"space-between" }} className="rows">
+        <Row className="rows">
             {projectData.map((project) => (
               <ProjectCard 
               imgPath = {project}
