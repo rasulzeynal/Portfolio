@@ -203,11 +203,13 @@ html {
     left: 50%;
     transform: translate(-50%,-50%);
     color: white;
+    width: 100%;
 
 
     .me {
         font-weight: 500;
         font-size: 60px;
+        text-align: center;
     }
 
     .position {
@@ -240,33 +242,16 @@ html {
 
 @media (max-width: 767px) {
   .me {
-    font-size:40px !important;
-    width: 100% !important;
+    font-size:30px !important;
+    justify-content: center !important;
+  }
+  .position {
+    font-size: 30px !important;
   }
 }
 
 
 /* ABOUT */
-
-
- .about {
-    width: 100vw;
-    height: 100vh;
-    background-color: #150b27;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-
-
-    .img {
-        width: 100%;
-        height: 100%;
-        background-image: url("./assets/img/about.png");
-        background-size:contain;
-        background-repeat: no-repeat;
-        padding-left: 100px;
-    }
-} 
 
 .about-section {
     position: relative !important;
@@ -278,11 +263,31 @@ html {
         rgba(12, 8, 24, 0.904)
       ) !important;
     color: white !important;
-    background-Color:#0c051a
-  }
+    background-Color:#0c051a;
+
+    .about-row {
+      margin-bottom: 100px !important;
 
 
-  .tech-icons {
+      .about-h{
+        font-size: 2.1em;
+        padding-bottom: 20px;
+        text-align: center;
+        
+      }
+
+      .quote-card-view{
+        background-color: transparent;
+        padding: 0;
+      }
+    }
+
+    .tech-row {
+      justify-content: center;
+      padding-bottom: 50px;
+
+
+       .tech-icons {
     font-size: 4.5em !important;
     margin: 15px !important;
     padding: 10px !important;
@@ -296,6 +301,16 @@ html {
     overflow: hidden !important;
     transition: all 0.4s ease 0s !important;
   }
+    }
+
+    .github{
+      justify-content: center;
+      padding-bottom: 10px;
+    }
+  }
+
+
+ 
 
 
   /* Project section */
@@ -305,6 +320,7 @@ html {
     padding-top: 150px !important;
     padding-bottom: 30px !important;
     background-image: var(--section-background-color) !important;
+    background-color:#150b27 ;
 
 
     .project-heading {
@@ -312,32 +328,63 @@ html {
       font-size: 2.3em !important;
       font-weight: 500 !important;
       padding-top: 10px !important;
+      text-align: center;
+      margin-top: 100px;
     }
 
-
-    .project-card {
-      padding-top: 50px !important;
-      padding-bottom: 50px !important;
-      padding-left: 25px !important;
-      padding-right: 25px !important;
-      height: auto !important;
-
+    .project-heading-second{
+      text-align: center;
+      color: white;
+      margin-bottom: 50px;
     }
-  }
 
-  .project-card-view {
+    .rows {
+      padding-bottom: 10px;
+      justify-content: space-between;
+
+    .project-card-view {
     box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
     color: white !important;
     background-color: transparent !important;
     opacity: 0.9 !important;
     transition: all 0.5s ease 0s !important;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    padding: 0;
+
+    .project-card-title{
+      text-align: center;
+      flex-wrap: nowrap;
+      width: 100%;
+    }
+
+    .project-card-about{
+      justify-content: space-around;
+      display: flex;
+
+      .project-card-button {
+        margin-bottom: 20px;
+        width: 100px;
+      }
+      .project-card-button:nth-last-child(1){
+        margin-left: 10px;
+        margin-bottom: 20px;
+        width: 100px;
+      }
+    }
   }
+
   .project-card-view:hover {
     transform: scale(1.02) !important;
     overflow: hidden !important;
     box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
   }
    
+    }
+  }
+
+  
+  
 
   /* Footer */
   .footer {
@@ -345,15 +392,41 @@ html {
     bottom: 0 !important;
     padding-top: 10px !important;
     padding-bottom: 8px !important ;
-  }
-  .footer-copywright {
+
+    .footer-copywright {
     text-align: center !important;
   }
+
   
   .footer-body {
     z-index: 1;
     text-align: center !important;
+
+
+    .footer-icons {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+
+    a {
+      color: white;
+      margin-right: 15px;
+    }
   }
+  }
+
+
+  h3 {
+    font-size: 1em;
+    color: white !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+  }
+  }
+  
+  
   
   @media (max-width: 767px) {
     .footer-copywright {
@@ -365,21 +438,6 @@ html {
     }
   }
   
-  .footer h3 {
-    font-size: 1em;
-    color: white !important;
-    margin-top: 0.5em !important;
-    margin-bottom: 0.5em !important;
-  }
-  .footer-icons {
-    margin-top: 0.5em !important;
-    margin-bottom: 0.5em !important;
-    padding: 0 !important;
-  }
-  
-  .blockquote-footer {
-    color: #a588c0 !important;
-  }
 
 
   /* Resume */
@@ -394,79 +452,16 @@ html {
         rgba(12, 8, 24, 0.904)
       ) !important;
     color: white !important;
-  }
-  
-  .resume {
+
+    .download-row{
+      justify-content: center ;
+      position: relative;
+
+    }
+
+    .resume {
     padding-top: 50px;
     padding-bottom: 50px;
     justify-content: center;
   }
-  
-  .resume-left {
-    padding-right: 80px !important;
-  }
-  
-  .resume-right {
-    padding-left: 80px !important;
-  }
-  
-  @media (max-width: 767px) {
-    .resume-left {
-      padding-right: 15px !important;
-      padding-left: 15px !important;
-    }
-  
-    .resume-right {
-      padding-right: 15px !important;
-      padding-left: 15px !important;
-    }
-  }
-  .resume .resume-title {
-    font-size: 2em;
-    font-weight: 700;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  
-  .resume .resume-item {
-    padding: 0 0 10px 25px;
-    margin-top: -2px;
-    border-left: 2px solid #8a49a8;
-    position: relative;
-  }
-  
-  .resume .resume-item .resume-title {
-    line-height: 18px;
-    font-size: 0.9em;
-    background: #5234795d;
-    padding: 8px 15px;
-    display: inline-block;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  
-  .resume .resume-item ul {
-    padding-left: 20px;
-    text-align: justify;
-  }
-  
-  .resume .resume-item ul li {
-    padding-bottom: 10px;
-    list-style: none;
-  }
-  
-  .resume .resume-item:last-child {
-    padding-bottom: 0;
-  }
-  
-  .resume .resume-item::before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50px;
-    left: -9px;
-    top: 0;
-    background: #fff;
-    border: 2px solid #8a49a8;
   }
