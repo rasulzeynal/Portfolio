@@ -24,7 +24,7 @@ export const projectData = [
         lang:['React','CSS',"Bootstrap"],
         github:"https://github.com/rasulzeynal/BasicContacts",
         demo:"https://basiccontacts.netlify.app/",
-        desc:""
+        desc:"In this project, a simple user list is created using HTML, Bootstrap and Javascript. Here you can also filter users by name or phone number."
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ export const projectData = [
         lang:['React','CSS','React-bootstrap'],
         github:"https://github.com/rasulzeynal/Employees",
         demo:"https://myemployees.netlify.app/",
-        desc:"This project was created to keep brief information about employees. UseContext, useState and useEffect Hooks are used here"
+        desc:"This project is also designed to compile a list of users. But this project is more functional than the other one. So here, in addition to registering the user, it is possible to edit or delete the user. Context Api is used here."
     },
     {
         id: 4,
@@ -42,7 +42,7 @@ export const projectData = [
         lang:['React','CSS'],
         github:"",
         demo:"",
-        desc:""
+        desc:"This project functions as a simple shopping cart. By clicking on the products placed here, we can redirect them to the cart. Redux was used to store the goods in the cart."
     },
     {
         id: 5,
@@ -51,7 +51,7 @@ export const projectData = [
         lang:['React','CSS','Bootstrap'],
         github:"https://github.com/rasulzeynal/Books",
         demo:"https://bookscreative-gnome-facbad.netlify.app/",
-        desc:"This is the first project I have developed by studying React. This project consists of class components and uses the Context API."
+        desc:"This is my first project learning React. This project consists of class components and uses the Context API. It is also possible to switch the background to night and day mode here."
     },
     {
         id: 6,
@@ -60,7 +60,7 @@ export const projectData = [
         lang:['React','CSS','Bootstrap'],
         github:"https://github.com/rasulzeynal/Movies",
         demo:"",
-        desc:"This project consists of a catalog of films."
+        desc:"This project consists of a collection of information about films. Here, the list of movies is stored in a JSON file and a fake json server is created and the movies are displayed on the screen through an api request. Here, it is also possible to add a new movie and edit an existing movie."
     },
     {
         id: 7,
