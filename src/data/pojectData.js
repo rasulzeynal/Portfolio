@@ -69,7 +69,7 @@ export const projectData = [
         lang:['React','SCSS','Reactstrap,Node js'],
         github:"https://github.com/rasulzeynal/mektebim",
         demo:"",
-        desc:""
+        desc:"This project can be used as a management program in courses. Thus, it is possible to create users in three roles: Admin, Teacher and Student. A profile is created for each user's role. Redux, Redux-Thunk, Redux persistent, RBAC, JWT and other technologies were used here."
     }
 
 ]
