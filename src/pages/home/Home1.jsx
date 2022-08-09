@@ -1,5 +1,7 @@
 import { useTypewriter } from "react-simple-typewriter";
-import 'react-simple-typewriter/dist/index'
+import 'react-simple-typewriter/dist/index';
+import { Button } from "react-bootstrap";
+import pdf from "../../assets/cv/Rasul.pdf";
 
 const Home1 = () => {
     const {text} = useTypewriter({
@@ -18,7 +20,7 @@ const Home1 = () => {
       </span> 
       </h3>
       <div style={{textAlign:"center"}}>
-      <button className="btn btn-cv">Download CV</button>
+      <Button href={pdf} target="_blank" className="btn btn-cv">Download CV</Button>
       <button className="btn btn-contact">Contact</button>
     </div>
     </div>
