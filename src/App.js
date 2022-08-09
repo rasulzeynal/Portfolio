@@ -12,6 +12,7 @@ import {
   Navigate
 } from "react-router-dom"
 import Footer from './pages/Footer';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/"/>} />
       </Routes>
       <Footer/>
