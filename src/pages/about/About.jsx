@@ -3,7 +3,7 @@ import Particle2 from "../Particle2"
 import AboutCard from "./AboutCard";
 import laptopImg from "../../assets/img/about.png";
 import Techstack from "./Techstack";
-import Github from "./Github"
+/* import Github from "./Github" */
 
 
 
@@ -33,7 +33,7 @@ const About = () => {
           Professional <strong className="purple">Skillset </strong>
         </h1>
         <Techstack/>
-        <Github/>
+        {/* <Github/> */}
         </Container>
     </Container>
   )
