@@ -2,7 +2,6 @@ import { useTypewriter } from "react-simple-typewriter";
 import 'react-simple-typewriter/dist/index';
 import { Button } from "react-bootstrap";
 import pdf from "../../assets/cv/Rasul.pdf";
-import { Link } from "react-router-dom";
 
 const Home1 = () => {
     const {text} = useTypewriter({

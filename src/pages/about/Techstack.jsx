@@ -9,8 +9,6 @@ import {
   DiGit,
 } from "react-icons/di";
 import {
-  SiPytorch,
-  SiFirebase,
   SiRedux,
 } from "react-icons/si";
 import {AiOutlineHtml5} from "react-icons/ai";
