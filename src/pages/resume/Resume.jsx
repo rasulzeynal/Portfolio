@@ -5,8 +5,6 @@ import { AiOutlineDownload } from "react-icons/ai";
 import pdf from "../../assets/cv/Rasul.pdf";
 import cv from "../../assets/cv/rasul.png"
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import {  pdfjs } from "react-pdf";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const Resume = () => {
     const [width, setWidth] = useState(1200);
@@ -31,7 +29,7 @@ const Resume = () => {
         </Row>
 
         <Row className="resume">
-          <img src={cv} alt="cv"/>
+          <img className='cv' src={cv} alt="cv"/>
         </Row>
 
         <Row className='download-row' >
