@@ -10,7 +10,7 @@ const Projects = () => {
        <Particle2/>
        <Container >
         <h1 className='project-heading'>
-          My Recent <strong className='purple'>Works</strong>
+          My Recent Works
         </h1>
         <p className='project-heading-second'>
         Here are a few projects I've worked on recently.

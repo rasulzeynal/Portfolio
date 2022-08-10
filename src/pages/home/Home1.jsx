@@ -22,9 +22,7 @@ const Home1 = () => {
       </h3>
       <div style={{textAlign:"center"}}>
       <Button href={pdf} target="_blank" className="btn btn-cv">Download CV</Button>
-      <Link to="/contact">
-      <button className="btn btn-contact">Contact</button>
-      </Link>
+      <Button href="https://wa.me/+994507345063" target="_blank" className="btn btn-contact">Contact</Button>
     </div>
     </div>
   )
