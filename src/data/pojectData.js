@@ -4,7 +4,8 @@ import foodstore from "../assets/img/foodstore.png";
 import manage_employees from "../assets/img/manage_employees.png";
 import myschool from "../assets/img/myschool.png";
 import simple_shopping from "../assets/img/simple_shopping.png";
-import mymovies from "../assets/img/mymovies.png"
+import mymovies from "../assets/img/mymovies.png";
+import portfolio from "../assets/img/portfolio.png"
 
 
 export const projectData = [
@@ -70,6 +71,15 @@ export const projectData = [
         github:"https://github.com/rasulzeynal/mektebim",
         demo:"",
         desc:"This project can be used as a management program in courses. Thus, it is possible to create users in three roles: Admin, Teacher and Student. A profile is created for each user's role. Redux, Redux-Thunk, Redux persistent, RBAC, JWT and other technologies were used here."
+    },
+    {
+        id: 8,
+        name:"Portfolio",
+        url:portfolio,
+        lang:['React','SCSS','React-bootstrap'],
+        github:"https://github.com/rasulzeynal/Portfolio",
+        demo:"https://rasulzeynal.netlify.app/",
+        desc:"This project was created in order to give a brief information about myself. You can see my other projects and cv by viewing the portfolio. Here, the main focus is on responsiveness and design."
     }
 
 ]
