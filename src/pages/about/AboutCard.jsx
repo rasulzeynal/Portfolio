@@ -11,7 +11,7 @@ const AboutCard = () => {
           Hi Everyone, I am Rasul Zeynalov from Baku, Azerbaijan.
             <br />
             <br />
-            I have been working in the IT field since 2018. For more than a year, I have been studying Front end in the form of self study. During this time I learned and continue to learn HTML, CSS, Bootstrap and other technologies.
+            I have been working in the IT field since 2018. For more than a year, I have been studying Front end in the form of self study. During this time I learned and continue to learn HTML, CSS, Bootstrap, JS, React and other technologies.
           </p>
         </blockquote>
       </Card.Body>
