@@ -36,7 +36,7 @@ export const projectData = [
         demo:"https://myemployees.netlify.app/",
         desc:"This project is also designed to compile a list of users. But this project is more functional than the other one. So here, in addition to registering the user, it is possible to edit or delete the user. Context Api is used here."
     },
-    {
+    /* {
         id: 4,
         name:"Simple Shopping",
         url:simple_shopping,
@@ -44,7 +44,7 @@ export const projectData = [
         github:"",
         demo:"",
         desc:"This project functions as a simple shopping cart. By clicking on the products placed here, we can redirect them to the cart. Redux was used to store the goods in the cart."
-    },
+    }, */
     {
         id: 5,
         name:"Bookfolio",

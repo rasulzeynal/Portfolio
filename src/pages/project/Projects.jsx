@@ -21,8 +21,6 @@ const Projects = () => {
               imgPath = {project}
               isBlock = {false}
               key={project.id}
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
               />
             ))}
         </Row>

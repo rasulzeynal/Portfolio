@@ -18,7 +18,7 @@ const ProjectCard = (props) => {
           <BsGithub /> &nbsp;
           {props.isBlog ? "Blog" : "GitHub"}
         </Button>
-        {!props.isBlog && props.demoLink && (
+        {!props.isBlog && props.imgPath.demo && (
           <Button
           className="project-card-button"
             variant="secondary"
