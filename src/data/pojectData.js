@@ -19,15 +19,6 @@ export const projectData = [
         desc:"This is the first project I have written to test my skills after learning HTML and CSS. Only HTML and CSS were used in the project. As I do not know about JS, each card was made individually."
     },
     {
-        id: 2,
-        name:"My Basic Contacts",
-        url:basic_contacts,
-        lang:['React','CSS',"Bootstrap"],
-        github:"https://github.com/rasulzeynal/BasicContacts",
-        demo:"https://basiccontacts.netlify.app/",
-        desc:"In this project, a simple user list is created using HTML, Bootstrap and Javascript. Here you can also filter users by name or phone number."
-    },
-    {
         id: 3,
         name:"Manage Employees",
         url:manage_employees,
@@ -36,15 +27,6 @@ export const projectData = [
         demo:"https://myemployees.netlify.app/",
         desc:"This project is also designed to compile a list of users. But this project is more functional than the other one. So here, in addition to registering the user, it is possible to edit or delete the user. Context Api is used here."
     },
-    /* {
-        id: 4,
-        name:"Simple Shopping",
-        url:simple_shopping,
-        lang:['React','CSS'],
-        github:"",
-        demo:"",
-        desc:"This project functions as a simple shopping cart. By clicking on the products placed here, we can redirect them to the cart. Redux was used to store the goods in the cart."
-    }, */
     {
         id: 5,
         name:"Bookfolio",
