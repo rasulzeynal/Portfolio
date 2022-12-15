@@ -4,12 +4,14 @@ import {
   DiCss3Full,
   DiJavascript1,
   DiReact,
-  DiJqueryLogo,
   DiSass,
   DiGit,
 } from "react-icons/di";
 import {
   SiRedux,
+  SiNextdotjs,
+  SiAntdesign,
+  SiTypescript
 } from "react-icons/si";
 import {AiOutlineHtml5} from "react-icons/ai";
 import {BsBootstrap} from "react-icons/bs";
@@ -31,16 +33,22 @@ const Techstack = () => {
         <BsBootstrap />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+      <SiAntdesign/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJqueryLogo />
+        <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiRedux />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNextdotjs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+      <SiTypescript/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />

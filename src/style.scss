@@ -344,14 +344,24 @@ html {
       justify-content:space-between;
 
     .project-card-view {
-    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+    width: 31% ;
+    box-shadow: 0 4px 5px 3px rgba(53, 55, 167, 0.561)!important;
     color: white !important;
     background-color: transparent !important;
     opacity: 0.9 !important;
     transition: all 0.5s ease 0s !important;
-    margin-right: 5px;
     margin-bottom: 30px;
     padding: 0;
+
+    &:hover {
+      transform: scale(1.02) !important;
+      overflow: hidden !important;
+      box-shadow: 0 4px 4px 5px rgba(53, 55, 167, 0.561) !important;
+    }
+
+    .project-card-image{
+      height: 40%;
+    }
 
     .project-card-title{
       text-align: center;
@@ -374,17 +384,14 @@ html {
       }
     }
   }
-
-  .project-card-view:hover {
-    transform: scale(1.02) !important;
-    overflow: hidden !important;
-    box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
-  }
-   
     }
   }
 
-  
+  @media (max-width: 767px) {
+    .project-card-view {
+      width: 100% !important;
+    }
+  }
   
 
   /* Footer */

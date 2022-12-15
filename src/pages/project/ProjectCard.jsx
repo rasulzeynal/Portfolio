@@ -6,8 +6,11 @@ import Button from "react-bootstrap/Button"
 const ProjectCard = (props) => {
     console.log(props.imgPath)
   return (
-    <Card className="project-card-view col-xs-12  col-md-3 ">
-    <Card.Img variant="top" src={props.imgPath.url}   alt="card-img"/>
+    <Card className="project-card-view col-xs-12 ">
+      <div className="project-card-image">
+        <Card.Img variant="top" src={props.imgPath.url} style={{height:"100%"}}  alt="card-img"/>
+      </div>
+    
     <Card.Body>
         <Card.Title className="project-card-title">{props.imgPath.name}</Card.Title>
         <Card.Text >
