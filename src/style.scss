@@ -362,27 +362,30 @@ html {
     .project-card-image{
       height: 40%;
     }
-
-    .project-card-title{
-      text-align: center;
-      flex-wrap: nowrap;
-      width: 100%;
-    }
-
-    .project-card-about{
-      justify-content: space-around;
-      display: flex;
-
-      .project-card-button {
-        margin-bottom: 20px;
-        width: 100px;
+    .card-body{
+      display:inline-grid;
+      .project-card-title{
+        text-align: center;
+        flex-wrap: nowrap;
+        width: 100%;
       }
-      .project-card-button:nth-last-child(1){
-        margin-left: 10px;
-        margin-bottom: 20px;
-        width: 100px;
+  
+      .project-card-about{
+        justify-content: space-around;
+        display: flex;
+  
+        .project-card-button {
+          margin-bottom: 20px;
+          width: 100px;
+        }
+        .project-card-button:nth-last-child(1){
+          margin-left: 10px;
+          margin-bottom: 20px;
+          width: 100px;
+        }
       }
     }
+    
   }
     }
   }
