@@ -5,7 +5,7 @@ import manage_employees from "../assets/img/manage_employees.png";
 import myschool from "../assets/img/myschool.png";
 import mymovies from "../assets/img/mymovies.png";
 import portfolio from "../assets/img/portfolio.png";
-import netflix from "../assets/img/netflix.png";
+import netflix from "../assets/img/netflixx.png";
 
 
 export const projectData = [
