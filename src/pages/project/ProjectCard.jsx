@@ -16,10 +16,10 @@ const ProjectCard = (props) => {
         <Card.Text >
           {props.imgPath.desc}
         </Card.Text>
-        <div className="project-card-about">
+        <div className="project-card-buttons">
         <Button className="project-card-button" variant="secondary" href={props.imgPath.github} target="_blank" >
           <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
+          GitHub
         </Button>
         {!props.isBlog && props.imgPath.demo && (
           <Button
@@ -29,7 +29,7 @@ const ProjectCard = (props) => {
             target="_blank"
           >
             <CgWebsite /> &nbsp;
-            {"Demo"}
+            Demo
           </Button>
         )}</div>
       </Card.Body>
