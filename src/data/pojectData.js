@@ -6,6 +6,7 @@ import myschool from "../assets/img/myschool.png";
 import mymovies from "../assets/img/mymovies.png";
 import portfolio from "../assets/img/portfolio.png";
 import netflix from "../assets/img/netflixx.png";
+import devfinder from "../assets/img/devfinder.png";
 
 
 export const projectData = [
@@ -29,6 +30,15 @@ export const projectData = [
     },
     {
         id: 3,
+        name:"Developer Finder",
+        url:devfinder,
+        lang:['React','Sass'],
+        github:"https://github.com/rasulzeynal/devfinder",
+        demo:"https://developersfinder.netlify.app/",
+        desc:"This project provides information about that user's github account based on the information entered in the input part. The project can be used in two modes: dark and light mode."
+    },
+    {
+        id: 8,
         name:"Movies App",
         url:mymovies,
         lang:['React','CSS','Bootstrap'],
