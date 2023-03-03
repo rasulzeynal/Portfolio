@@ -7,6 +7,7 @@ import mymovies from "../assets/img/mymovies.png";
 import portfolio from "../assets/img/portfolio.png";
 import netflix from "../assets/img/netflixx.png";
 import devfinder from "../assets/img/devfinder.png";
+import planetsfact from "../assets/img/planetsfact.png"
 
 
 export const projectData = [
@@ -36,6 +37,15 @@ export const projectData = [
         github:"https://github.com/rasulzeynal/devfinder",
         demo:"https://developersfinder.netlify.app/",
         desc:"This project provides information about that user's github account based on the information entered in the input part. The project can be used in two modes: dark and light mode."
+    },
+    {
+        id: 9,
+        name:"Planets' fact",
+        url:planetsfact,
+        lang:['React','Sass', 'React-bootstrapp'],
+        github:"https://github.com/rasulzeynal/planets-fact",
+        demo:"https://planetfact.netlify.app/",
+        desc:"This project is about the planets: brief information about them, Wikipedia link for detailed information, general, internal and geological structure, rotation time, revolution time, average temperature, radius are mentioned."
     },
     {
         id: 8,
