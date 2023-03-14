@@ -7,7 +7,8 @@ import mymovies from "../assets/img/mymovies.png";
 import portfolio from "../assets/img/portfolio.png";
 import netflix from "../assets/img/netflixx.png";
 import devfinder from "../assets/img/devfinder.png";
-import planetsfact from "../assets/img/planetsfact.png"
+import planetsfact from "../assets/img/planetsfact.png";
+import todo from "../assets/img/todo.png";
 
 
 export const projectData = [
@@ -28,6 +29,15 @@ export const projectData = [
         github:"https://github.com/rasulzeynal/netflix-app",
         demo:"https://netflixxapp.netlify.app/",
         desc:"A clone of the Netflix page was created in this project. React, Redux, styled components, firebase were used here. Here you can register, enter your account and create your movie list."
+    },
+    {
+        id: 10,
+        name:"Todo App",
+        url:todo,
+        lang:['React','Sass', 'redux-toolkit','redux-persist'],
+        github:"https://github.com/rasulzeynal/todo-app",
+        demo:"https://createtodo.netlify.app/",
+        desc:"This is used to create a project to-do list. When creating the project, technologies such as react, redux-toolkit, redux-persist, scss were used. Here it is possible to create a todo, finish a todo, and perform filters on todos."
     },
     {
         id: 3,
