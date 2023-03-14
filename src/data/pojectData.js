@@ -1,4 +1,3 @@
-import basic_contacts from "../assets/img/basic_contacts.png";
 import bookfolio from "../assets/img/bookfolio.png";
 import foodstore from "../assets/img/foodstore.png";
 import manage_employees from "../assets/img/manage_employees.png";
