@@ -17,7 +17,7 @@ const Resume = () => {
     <div>
       <Container fluid className="resume-section">
         <Particle2/>
-        <Row className='download-row' >
+        */<Row className='download-row' >
           <Button
             variant="secondary"
             href={pdf}
@@ -41,7 +41,7 @@ const Resume = () => {
             <AiOutlineDownload />
             &nbsp;Download CV
           </Button>
-        </Row>
+        </Row>*/
       </Container>
     </div>
   )
