@@ -3,7 +3,7 @@ import Particle2 from "../Particle2";
 import { Container, Row, Button } from 'react-bootstrap';
 import { AiOutlineDownload } from "react-icons/ai";
 import pdf from "../../assets/cv/Rasul.pdf";
-import cv from "../../assets/cv/rasul.png"
+import cv from "../../assets/cv"
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 
 const Resume = () => {
